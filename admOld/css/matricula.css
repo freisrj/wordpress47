@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+#forMat{width:auto;
+	height:auto;
+}
+#esq{float:left;
+	width:550px;
+	margin-left:15px;
+}
+#forMat fieldset{margin:2px;
+	padding:2px;
+	background:#D7E6E8;
+}
+#forMat legend{ font:14pt Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	color:#006699;
+}
+#dir{margin-left:428px;}
+#lisN,#can{display:none;}
+#avista,#parcelado{}
+#forMat table{border:0px #000 solid; 
+	margin:0px; 
+	padding:0px;
+}
+#forMat table input,#forMat table select{font:12pt Arial, Helvetica, sans-serif;
+}
+#esq table td{text-align:left;}
+#forMat table th,#forMat td b{text-align:right;
+	font:8pt Verdana, Geneva, sans-serif;
+	font-weight:bold;
+	width:110px;
+	background:#B5D1D5;
+	color:#006699;
+}
+#dir table th{text-align:center;}
+#dir table td{text-align:center;}
+#nomesL, #nome{width:280px;}
+
+#Vparcelas{border:1px solid #666;
+	border-collapse:collapse;
+}
+#Vparcelas input{border:none; text-align:center}
+#Vparcelas table td{}
+#ver_forma_pag, #dir, #imp_recibo,#imp_recibo_ass{display:none;}
+#busMat{display:none;}

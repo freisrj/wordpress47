@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+.labtur{border:1px #000 solid;
+	padding:5px;
+	width:100px;
+	height:25px;
+	/*float:left;*/
+}
+.listur{font:8pt Arial, Helvetica, sans-serif;}
+.listur b{ font:16pt Verdana, Geneva, sans-serif;
+}
+.listur label{margin-right:10px;
+	margin-left:5px;
+}
+.listur strong,.listur input,.listur select{color:#006;
+	background:#CCC;
+	font-size:12pt;
+	padding:0 5px;
+	margin:0;
+	width:auto;
+	height:22px;
+	border:0px #000 solid;
+}
+.listur span{width:auto;
+	height:auto;
+	margin:5px 0;
+	/*border:1px #0F0 solid;*/
+	display:block;
+}
+#mostTur{position:absolute;
+	margin: 0 180px 0 300px;
+	padding:20px;
+	width:auto;
+	height:auto;
+	border:2px #003 solid;
+	background:#CCC;
+	display:none;
+}
+.asa:hover{background:#999;
+	cursor:pointer;
+}
+.tabM th{font-size:24px;
+	background:#033;
+	color:#FFF;
+	text-align:center;
+}
+.asa td{text-align:center;}

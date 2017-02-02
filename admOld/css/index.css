@@ -1,0 +1,159 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0; padding:0;}
+#titADM{background:url(../images/fundo_tit_adm.png) repeat-x; 
+	padding:5px;
+	height:100px;
+}
+#titADM b{margin-left:10px;
+	color:#FFCC66; 
+	font-size:24px;
+	height:130px;
+	vertical-align:top;
+	width:250px;
+}
+#titADM h5{margin:50px 0 0 280px;
+	color:#FFF;
+	font:12pt "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+#titADM h6{ float:right;
+	margin-right:200px;
+	color:#FFF;
+	font-size:36px;
+}
+#menuP{ background:#000; /*#A7C5C7;ffcc66*/
+	width:100%;
+	height:25px;
+	padding:3px;
+}
+#menuP ol{}
+#menuP ol li{ list-style:none; float:left; margin-right:2px;}
+#menuP ol li a{ text-decoration:none;
+	width: 150px;
+	height:22px;
+	display:block;
+	font-weight:bold;
+	border:1px #000 solid;
+	background:url(../images/bt2.png) no-repeat;
+	text-align:center;
+	color:#fff;
+}
+#menuP ol li a:hover{ background:url(../images/bt1.png) no-repeat;
+	display:block;
+	color:#000;
+}
+#menuP ol li ol li a:hover{ background:#ffcc66;
+	display:block;
+}
+
+#menuP ol li:hover ol { display: block; }
+
+#menuP ol li ol{display:none;
+	position:absolute;
+}
+#menuP ol li ol li{float:none;}
+#menuP ol li ol li a{width:300px; 
+	text-align:left;
+	background:#006699;
+	text-indent:10px;
+}
+/* nivel 2 */
+#menuP ol li ol li ul li a{ text-decoration:none;
+	width:auto;
+	height:22px;
+	display:block;
+	border:1px #000 solid;
+	background:#006699;
+	text-align:left;
+	color:#fff;
+	text-indent:10px;
+}
+#menuP ol li ol li:hover ul { display: block; }
+#menuP ol li ol li ul{display:none;
+	position:absolute;
+	margin:-22px 0 0 180px;
+}
+#menuP ol li ol li ul li{float:none;}
+#menuP ol li ol li ul li a{width:300px;
+}
+
+/* nivel 3 */
+#menuP ol li ol li ul li ul li a{ text-decoration:none;
+	width:auto;
+	height:22px;
+	display:block;
+	border:1px #000 solid;
+}
+#menuP ol li ol li ul li:hover ul { display: block; }
+#menuP ol li ol li:hover ul ul{display:none;
+	position:absolute;
+	margin:-22px 0 0 180px;
+}
+#menuP ol li ol li ul li ul li{float:none;}
+#menuP ol li ol li ul li ul li a{width:400px;
+	text-align:left;
+	background:#006699;
+	color:#fff;
+	text-indent:10px;
+}
+
+
+#menuP{}
+#menuP{}
+#corpo{width:100%;
+	height:auto;
+}
+.acesso{ border:6px #5881CB ridge;
+	width:450px;
+	height:auto;
+	padding:10px;
+	margin-top:50px;
+	background:#fff;
+	font:14pt "Courier New", Courier, monospace;
+}
+body{background-image:url(../../imgs/fundo_login.jpg);}
+.acesso input{border:0px #000 solid;
+	background:#C4D0DF;
+}
+.acesso h3{background :#5881CB;
+	color:#F8C807;
+	margin:10px;
+}
+.acesso button{border:0px #CCC solid;}
+#lendo{position:absolute;
+	left:0;
+	top:0;
+}
+#fuga{display:none;}
+#lixo{display:none;}
+
+#contrato{font:11px Arial, Helvetica, sans-serif;}
+#contrato p{margin-bottom:2px;
+	text-align:justify;
+}
+/*-----------------todos-----------------------*/
+fieldset{margin:2px;
+	padding:2px;
+	background:#D7E6E8;
+}
+legend{ font:14pt Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	color:#006699;
+}
+table{border:0px #000 solid; 
+	margin:0px; 
+	padding:0px;
+}
+table input,table select{font:12pt Arial, Helvetica, sans-serif;
+}
+table td{text-align:left;}
+table th,td b{text-align:right;
+	font:8pt Verdana, Geneva, sans-serif;
+	font-weight:bold;
+	width:110px;
+	background:#B5D1D5;
+	color:#006699;
+}
+table th{text-align:center;}
+table td{text-align:center;}
+input{border:none; text-align:center}

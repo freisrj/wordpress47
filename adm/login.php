@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+<?php
+session_start();
+
+// Segurança - para evitar que alguém que cole a URL de uma página interna possa entrar diretamente
+unset($_SESSION ['Usuario']);
+unset($_SESSION ['Nome']);
+unset($_SESSION ['Email']);
+unset($_SESSION ['Id_usuario']);
+unset($_SESSION ['Id_nivel_acesso']);
+unset($_SESSION ['Nome_nivel_acesso']);
+unset($_SESSION ['Created']);
+unset($_SESSION ['Imagem_path']);
+
+
+header('Content-Type: text/html; charset=utf-8');
+ini_set('display_errors',1);
+ini_set('log_errors',1);
+ini_set('error_log', dirname(__FILE__) . 'error_log.txt');
+error_reporting(E_ALL);
+
+//$url = isset($_GET['url']) ? $_GET['url'] : null;
+//echo '1.' . $url;
+
+include_once "config/config.php";
+
+/**
+ * Método "mágico" do php para carregamento automático de classes
+ * @param class $c classe que será iniciada
+*/    
+function __autoload($c) {
+    $diretorios = array (
+        './',
+        './to/',
+        './model/',
+        './libs/',
+        './gui/',
+        './dao/'
+    );
+    
+    foreach($diretorios as $dir){
+        $arquivo = $dir . $c . '.php';
+        //echo $arquivo.'<br />';
+        if(file_exists($arquivo)){
+            //echo 'Existe '.$arquivo.'<br />';
+            require_once $arquivo;
+        }
+    }
+}
+
+$t = new TApp();
+$t->executar();
+
+?>
+    <!-- <meta charset="utf-8">-->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <title>Área administrativa | Log in</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.5 -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="plugins/iCheck/square/blue.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="hold-transition login-page">
+    <div class="login-box">
+      <div class="login-logo">
+        <b>Área administrativa</b>
+      </div><!-- /.login-logo -->
+      <div class="login-box-body">
+        <p class="login-box-msg">Entre com usuário e senha para iniciar.</p>
+        
+			<?php 
+				if (isset($_SESSION ['loginErro'])) {
+        			echo "<div class='alert alert-danger role='alert'>".$_SESSION ['loginErro']."</div>";
+					unset($_SESSION ['loginErro']);
+				}
+			?>
+        </p>
+        
+        <form action="<?php echo MAINURL;?>controle-usuario/validaUsuario" method="post">
+          
+          <div class="form-group has-feedback">
+            <input type="text" name="txtLogin" class="form-control" placeholder="Digite o usuário">
+            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+          </div>
+          
+          <div class="form-group has-feedback">
+            <input type="password" name="txtSenha" class="form-control" placeholder="Digite a senha">
+            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+          </div>
+          
+          
+          <div class="row">
+            
+            <div class="col-xs-8">
+			  <!-- /.col --> 
+              <div class="checkbox icheck">
+                <label>
+                <input type="checkbox"> Lembre-me
+                </label>
+              </div>
+            </div>
+            
+            <div class="col-xs-4">
+              <button type="submit" class="btn btn-primary btn-block btn-flat">Entrar</button>
+            </div><!-- /.col -->
+          </div>
+        </form>
+
+		<!-- /.social-auth-links -->
+		
+        <a href="#">Não lembro minha senha</a><br>
+<!--        <a href="register.html" class="text-center">Cadastre-se</a>-->
+
+
+      </div><!-- /.login-box-body -->
+    </div><!-- /.login-box -->
+
+    <!-- jQuery 2.1.4 -->
+    <script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <!-- Bootstrap 3.3.5 -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- iCheck -->
+    <script src="plugins/iCheck/icheck.min.js"></script>
+    <script>
+      $(function () {
+        $('input').iCheck({
+          checkboxClass: 'icheckbox_square-blue',
+          radioClass: 'iradio_square-blue',
+          increaseArea: '20%' // optional
+        });
+      });
+    </script>
+  </body>
+</html>

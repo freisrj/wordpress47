@@ -1,0 +1,10 @@
+<?php
+define("MAINURL","HTTP://localhost:8888/wordpress47/adm/");
+define("HOST","localhost");
+//define("PORT","3360");
+//define("DB_NAME","admDB");
+define("PORT","8889");
+define("DB_NAME","wandall_ca");
+define("USER_NAME","root");
+define("PASSWORD","root");
+?>
