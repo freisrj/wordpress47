@@ -6,15 +6,15 @@ define( 'DS', DIRECTORY_SEPARATOR );
 
 //echo MAINURL . DS. 'libs/Conexao.php';
 
-require_once ( MAINURL . DS. 'libs/Conexao.php');
+require 'vendor/autoload.php';
+
 $Usuario = $_POST["usuario"];
 $Senha = $_POST["senha"];
 
-use Libs\Conexao;
-$conn = new Conexao();
-//$conn->getConexao(); 
+$conn = new Libs\Conexao();
+$conn->getConexao(); 
 
-echo $Usuario.' - '.$Senha.'<br>';
+//echo $Usuario.' - '.$Senha.'<br>';
 
 	// Forma BIND de chamada SELECT
 	//$sql1 = "SELECT  l.id_fun, l.unidade, l.acesso, f.nome

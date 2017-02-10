@@ -1,6 +1,8 @@
 <?php
 session_start();
 
+
+
 // Segurança - para evitar que alguém que cole a URL de uma página interna possa entrar diretamente
 unset($_SESSION ['Usuario']);
 unset($_SESSION ['Nome']);

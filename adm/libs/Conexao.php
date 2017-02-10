@@ -15,11 +15,19 @@ class Conexao{
 
     private static function open() {
         
-        $host= HOST;
-        $port = PORT;
-        $database = DB_NAME;
-        $user = USER_NAME;
-        $pass = PASSWORD;
+        $host= "localhost";
+        $port = "3306";
+        $database = "wandall_ca";
+        $user = "root";
+        $pass = "root";
+
+        /*
+        $host= "mysql.ms-project-rj.com.br";
+        $port = "3306";
+        $database = "msprojectrj01";
+        $user = "msprojectrj01";
+        $pass = "rafa130899";
+        */
 
         self::$cnx = new PDO("mysql:host={$host};dbname={$database}", 
                              $user, 
