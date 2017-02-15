@@ -88,7 +88,7 @@ function inicio(){
 </script>
 <?php 
 echo "conectando...";
-require('conect.php'); 
+require_once('conect.php'); 
 ?>
 <body>
 <?php 

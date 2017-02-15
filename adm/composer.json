@@ -23,4 +23,14 @@
   "support": {
     "issues": "https://github.com/almasaeed2010/AdminLTE/issues"
   }
+  
+  // ,"autoload": {
+  //     "psr-4": {
+  //        "App\\Dao\\": "src/App/Dao",
+  //        "App\\Interfaces\\": "src/App/Interfaces",
+  //        "App\\Model\\": "src/App/Model",
+  //        "App\\To\\": "src/App/To",
+  //        "App\\": "src/App"
+  //     }
+  //  }
 }

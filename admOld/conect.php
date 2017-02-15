@@ -1,11 +1,19 @@
 <?php 
 
-$host = "localhost:8889";
+$host = "localhost";
 $user =  "root";
 $senha = "root";
 $dbname = "wandall_ca";   
 
-mysql_connect($host,$user,$senha) or die (mysql_error());
+echo "entrei...";
+
+$link = mysql_connect($host,$user,$senha);
+if (!$link) {
+    die('Não foi possível conectar: ' . mysql_error());
+}
+mysql_select_db($dbname, $g_link) or die('Could not select database.');
+
+//mysql_connect($host,$user,$senha) or die (mysql_error());
 // mysql_select_db($dbname);
 // mysql_query("SET NAMES 'utf8'");
 // mysql_query("SET character_set_connection=utf8");
