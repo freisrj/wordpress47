@@ -20,11 +20,11 @@ define("PASSWORD","root");
 
 // Produção NOVA
 //
-//define("MAINURL","HTTP://localhost:8888/wordpress47/adm/");
-//define("HOST","mysql.ms-project-rj.com.br");
-//define("PORT","3306");
-//define("DB_NAME","msprojectrj01");
-//define("USER_NAME","msprojectrj01");
-//define("PASSWORD","rafa130899");
+// define("MAINURL","http://ms-project-rj.com.br/adm/");
+// define("HOST","mysql.ms-project-rj.com.br");
+// define("PORT","3306");
+// define("DB_NAME","msprojectrj01");
+// define("USER_NAME","msprojectrj01");
+// define("PASSWORD","rafa130899");
 
 ?>

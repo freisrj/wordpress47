@@ -249,14 +249,14 @@
                       <a href="" class="btn btn-default btn-flat">Meu Perfil</a>
                     </div>
                     <div class="pull-right">
-                      <a href="controle-login/sair" class="btn btn-default btn-flat">Sair</a>
+                      <a href="sair" class="btn btn-default btn-flat">Sair</a>
                     </div>
                   </li>
                 </ul>
               </li>
               <!-- Control Sidebar Toggle Button -->
               <li>
-                <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                <a href="sair" alt="Logout"><i class="fa fa-close"></i> Logout</a>
               </li>
             </ul>
           </div>

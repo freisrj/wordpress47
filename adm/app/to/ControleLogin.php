@@ -68,11 +68,13 @@ class ControleLogin {
             $df = new DaoFuncionario();
             // Lista o registro de funcionario
             $funs = $df->listar($f);
-            $f = $funs[0];
+            (is_array($funs)) ? $f = $funs[0] : null;
+
             //echo 'is_object($f) = '.is_object($f).'<br />';
             //echo 'is_array($f) = '.is_array($f).'<br />';
             //echo '$f->getNome() = '.$f->getNome().'<br />';
             $logins[$i]->setFuncionario($f);
+            //echo '$logins['.$i.']->getFuncionario()->getNome() = '.$logins[$i]->getFuncionario()->getNome().'<br />';
             $i++;
         }
         $f = null;

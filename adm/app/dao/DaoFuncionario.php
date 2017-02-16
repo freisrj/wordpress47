@@ -68,9 +68,9 @@ class DaoFuncionario implements IDaoFuncionario{
         $arFuncionarios = array();
         while ($fun = $sth->fetchObject("Funcionario")) {
             $arFuncionarios[] = $fun; 
-            //echo 'tamanho do logins = '.count($fun);
-            //echo '$arFuncionarios [0]->getIdFun() = '.$arFuncionarios[0]->getIdFun().'<br />';
-            //echo '$arFuncionarios [0]->getNome() = '.$arFuncionarios[0]->getNome().'<br />';
+            //echo '3. tamanho do logins = '.count($fun);
+            //echo '3. $arFuncionarios [0]->getIdFun() = '.$arFuncionarios[0]->getIdFun().'<br />';
+            //echo '3. $arFuncionarios [0]->getNome() = '.$arFuncionarios[0]->getNome().'<br />';
         }
         return $arFuncionarios;
     }

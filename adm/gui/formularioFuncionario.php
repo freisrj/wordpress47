@@ -33,6 +33,103 @@ $imagem_path = "";
 <!-- Main content -->
 <section class="content">
 
+    <div class="box">
+        <div class="box-header with-border">
+            <h3 class="box-title">Formulário de Funcionário</h3>
+            <div class="box-tools pull-right">
+                <button class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>
+                <button class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove"><i class="fa fa-times"></i></button>
+            </div>
+        </div>
+        <div class="box-body">
+            <div class="col-sm-10">
+
+                <form class="form-horizontal">
+
+                    <div class="form-group">
+                        <label for="inputName" class="col-sm-2 control-label">Nome</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="inputName" placeholder="Nome do Funcionário">
+                        </div>
+                        <label for="inputApelido" class="col-sm-2 control-label">Apelido</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="inputApelido" placeholder="Apelido">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputTelefone" class="col-sm-2 control-label">Telefone</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="inputTelefone" placeholder="Telefone">
+                        </div>
+                        <label for="inputCelular" class="col-sm-2 control-label">Celular</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="inputCelular" placeholder="Celular">
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <label for="inputEndereco" class="col-sm-2 control-label">Endereço</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="inputEndereco" placeholder="Endereço">
+                        </div>
+                        <label for="inputBairro" class="col-sm-2 control-label">Bairro</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="inputBairro" placeholder="Bairro">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputCidade" class="col-sm-2 control-label">Cidade</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="inputCidade" placeholder="Cidade">
+                        </div>
+                        <label for="inputCep" class="col-sm-2 control-label">CEP</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="inputCep" placeholder="CEP">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputFuncao" class="col-sm-2 control-label">Função</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="inputFuncao" placeholder="Função">
+                        </div>
+                    </div>
+
+
+                    <!--
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> Aceito os <a href="#">termos e condições.</a>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  -->
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-4">
+                            <button type="submit" class="btn btn-primary pull-left"><i class="fa fa-fw fa-check"></i>Confirmar</button>
+                            <button type="button" class="btn btn-default pull-right"><i class="fa fa-fw fa-close"></i>Cancelar</button>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+        </div><!-- /.box-body -->
+
+        <!--
+        <div class="box-footer">
+            Footer
+        </div><!-- /.box-footer-->
+    </div>
+
+    <!--
     <div class="box box-primary">
         <div class="panel-body">
 
@@ -41,22 +138,14 @@ $imagem_path = "";
                 <div class="col-sm-2 pull-left">
                     <div class="form-group">
                         <div class="col-sm-14">
-                            <img src="/phpMVC/img/users/avatar.jpg" class="img-circle" alt="Imagem do Funcionário">
+                            <img src="img/users/avatar.jpg" class="img-circle" alt="Imagem do Funcionário">
                             <button type="submit" class="btn bg-navy btn-lg"><i class="fa fa-fw fa-upload"></i>Alterar foto</button>
-                            
-                            <!--<label for="InputFile">Alterar foto</label>
-                            <input type="file" id="InputFile">
-                            <p class="help-block">Escolha um arquivo para alterar a foto do funcionário.</p>-->
-
                         </div>
-
-
                     </div>
                 </div>
 
 
                 <div class="col-sm-10">
-
 
                     <form class="form-horizontal">
 
@@ -113,18 +202,6 @@ $imagem_path = "";
                             </div>
                         </div>
 
-
-                        <!--
-                      <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10">
-                          <div class="checkbox">
-                            <label>
-                              <input type="checkbox"> Aceito os <a href="#">termos e condições.</a>
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                      -->
                         <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-4">
                                 <button type="submit" class="btn btn-primary pull-left"><i class="fa fa-fw fa-check"></i>Confirmar</button>
@@ -138,6 +215,7 @@ $imagem_path = "";
             </div>
         </div>
     </div>
+    -->
 
     <div class="box-body">
         <div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">

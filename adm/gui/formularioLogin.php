@@ -27,6 +27,99 @@ $unidade = "";
 <!-- Main content -->
 <section class="content">
 
+    <div class="box">
+        <div class="box-header with-border">
+            <h3 class="box-title">Formulário de Login</h3>
+            <div class="box-tools pull-right">
+                <button class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>
+                <button class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove"><i class="fa fa-times"></i></button>
+            </div>
+        </div>
+        <div class="box-body">
+            <div class="col-sm-10">
+
+                <form class="form-horizontal">
+
+                    <div class="form-group">
+                        
+                        <label for="inputName" class="col-sm-2 control-label">Funcionário</label>
+                        <div class="col-sm-4">
+                            <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                              <option selected="selected">Fernando Reis</option>
+                              <option>Nome 2</option>
+                              <option>Nome 3</option>
+                              <option>Nome 4</option>
+                              <option>Nome 5</option>
+                            </select>
+                            <!--
+                            <span class="select2 select2-container select2-container--default select2-container--below" dir="ltr" style="width: 100%;">
+                                <span class="selection">
+                                    <span class="select2-selection select2-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-nv5l-container">
+                                        <span class="select2-selection__rendered" id="select2-nv5l-container" title="Fernando Reis">Fernando Reis</span>
+                                        <span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span>
+                                    </span>
+                                </span>
+                                <span class="dropdown-wrapper" aria-hidden="true"></span>
+                            </span>
+                            -->
+                            <input type="hidden" id="inputId">
+                            <input type="hidden" id="inputIdFun">
+                        </div>
+
+                        <label for="inputUnidade" class="col-sm-2 control-label">Unidade</label>
+                        <div class="col-sm-4">
+                            <select class="form-control" id="inputUnidade">
+                                <option>1 - Rio</option>
+                                <option>2 - Niterói</option>
+                                <option>3 - Rio-Mix</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputAcesso" class="col-sm-2 control-label">Nível de acesso</label>
+                        <div class="col-sm-4">
+                            <select class="form-control" id="inputAcesso">
+                                <option>1 - Administrador</option>
+                                <option>2 - Usuário</option>
+                            </select>
+                        </div>
+                        <label for="inputLogin" class="col-sm-2 control-label">Login</label>
+                        <div class="col-sm-4">
+                            <input type="text" class="form-control" id="inputLogin" placeholder="Login">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputSenha" class="col-sm-2 control-label">Senha</label>
+                        <div class="col-sm-4">
+                            <input type="password" class="form-control" id="inputSenha" placeholder="Senha">
+                        </div>
+                        <label for="inputConfirmeSenha" class="col-sm-2 control-label">Confirme a Senha</label>
+                        <div class="col-sm-4">
+                            <input type="password" class="form-control" id="inputConfirmeSenha" placeholder="Confirme a Senha">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-4">
+                            <button type="submit" class="btn btn-primary pull-left"><i class="fa fa-fw fa-check"></i>Confirmar</button>
+                            <button type="button" class="btn btn-default pull-right"><i class="fa fa-fw fa-close"></i>Cancelar</button>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+        </div><!-- /.box-body -->
+
+        <!--
+        <div class="box-footer">
+            Footer
+        </div><!-- /.box-footer-->
+    </div>
+
+    <!--
     <div class="box box-primary">
         <div class="panel-body">
 
@@ -47,17 +140,6 @@ $unidade = "";
                                   <option>Nome 4</option>
                                   <option>Nome 5</option>
                                 </select>
-                                <!--
-                                <span class="select2 select2-container select2-container--default select2-container--below" dir="ltr" style="width: 100%;">
-                                    <span class="selection">
-                                        <span class="select2-selection select2-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-nv5l-container">
-                                            <span class="select2-selection__rendered" id="select2-nv5l-container" title="Fernando Reis">Fernando Reis</span>
-                                            <span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span>
-                                        </span>
-                                    </span>
-                                    <span class="dropdown-wrapper" aria-hidden="true"></span>
-                                </span>
-                                -->
                                 <input type="hidden" id="inputId">
                                 <input type="hidden" id="inputIdFun">
                             </div>
@@ -97,18 +179,6 @@ $unidade = "";
                             </div>
                         </div>
 
-
-                        <!--
-                      <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10">
-                          <div class="checkbox">
-                            <label>
-                              <input type="checkbox"> Aceito os <a href="#">termos e condições.</a>
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                      -->
                         <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-4">
                                 <button type="submit" class="btn btn-primary pull-left"><i class="fa fa-fw fa-check"></i>Confirmar</button>
@@ -122,6 +192,7 @@ $unidade = "";
             </div>
         </div>
     </div>
+    -->
 
     <div class="box-body">
         <div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">

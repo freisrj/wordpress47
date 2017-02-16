@@ -1,0 +1,18 @@
+[15-Feb-2017 15:42:35 Europe/Berlin] PHP Notice:  Undefined offset: 0 in /Applications/MAMP/htdocs/wordpress47/adm/app/to/ControleLogin.php on line 71
+[15-Feb-2017 15:42:35 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function getNome() on null in /Applications/MAMP/htdocs/wordpress47/adm/gui/validaLogin.php:26
+Stack trace:
+#0 /Applications/MAMP/htdocs/wordpress47/adm/app/TGui.php(18): include_once()
+#1 /Applications/MAMP/htdocs/wordpress47/adm/app/to/ControleLogin.php(83): TGui->renderizar()
+#2 /Applications/MAMP/htdocs/wordpress47/adm/app/TApp.php(74): ControleLogin->validaLogin(Array)
+#3 /Applications/MAMP/htdocs/wordpress47/adm/index.php(49): TApp->executar()
+#4 {main}
+  thrown in /Applications/MAMP/htdocs/wordpress47/adm/gui/validaLogin.php on line 26
+[15-Feb-2017 19:06:34 Europe/Berlin] PHP Notice:  Undefined index: Imagem_path in /Applications/MAMP/htdocs/wordpress47/adm/gui/principal-header.php on line 35
+[15-Feb-2017 19:06:34 Europe/Berlin] PHP Notice:  Undefined index: Imagem_path in /Applications/MAMP/htdocs/wordpress47/adm/gui/principal-header.php on line 215
+[15-Feb-2017 19:06:34 Europe/Berlin] PHP Notice:  Undefined index: Nome in /Applications/MAMP/htdocs/wordpress47/adm/gui/principal-header.php on line 218
+[15-Feb-2017 19:06:34 Europe/Berlin] PHP Notice:  Undefined index: Imagem_path in /Applications/MAMP/htdocs/wordpress47/adm/gui/principal-header.php on line 226
+[15-Feb-2017 19:06:34 Europe/Berlin] PHP Notice:  Undefined index: Nome in /Applications/MAMP/htdocs/wordpress47/adm/gui/principal-header.php on line 228
+[15-Feb-2017 19:06:34 Europe/Berlin] PHP Notice:  Undefined index: Funcao in /Applications/MAMP/htdocs/wordpress47/adm/gui/principal-header.php on line 229
+[15-Feb-2017 19:06:34 Europe/Berlin] PHP Notice:  Undefined index: Imagem_path in /Applications/MAMP/htdocs/wordpress47/adm/gui/principal-sidebar.php on line 28
+[15-Feb-2017 19:06:34 Europe/Berlin] PHP Notice:  Undefined index: Nome in /Applications/MAMP/htdocs/wordpress47/adm/gui/principal-sidebar.php on line 32
+[15-Feb-2017 19:17:01 Europe/Berlin] PHP Parse error:  syntax error, unexpected '']->getFuncionario()->getNome(' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /Applications/MAMP/htdocs/wordpress47/adm/app/to/ControleLogin.php on line 77

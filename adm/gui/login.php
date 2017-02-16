@@ -30,7 +30,9 @@
 
       <div class="login-logo">
         <!--<b>Área administrativa</b>-->
-        <img src="<?php echo MAINURL; ?>img/nlogocomp.png" style="width: 360px">
+        <!--<img src="<?php echo MAINURL; ?>img/nlogocomp.png" style="width: 360px">-->
+        <img src="<?php echo MAINURL; ?>img/logo.png" class="img-login" style="width: 45%; height: 45%;"> 
+        <b>Admin</b>
       </div><!-- /.login-logo -->
 
       <div class="login-box-body">
