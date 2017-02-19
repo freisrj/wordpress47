@@ -73,11 +73,11 @@
 
             <li>
               <a href="">
-                <i class="fa fa-calendar"></i> <span>Turmas</span>
-                <span class="pull-right-container">
-                  <small class="label pull-right bg-green">3 abertas</small>
-                  <small class="label pull-right bg-blue">17 em curso</small>
-                </span>
+                <i class="fa fa-calendar"></i> 
+                <span>Turmas</span>
+                
+                <small class="label pull-right bg-green">3</small>
+                <small class="label pull-right bg-blue">17</small>
               </a>
             </li>
 
@@ -85,10 +85,9 @@
 
             <li class="treeview">
               <a href="#">
-                <i class="fa fa-user"></i> <span>Alunos</span>
-                <span class="pull-right-container">
-                  <i class="fa fa-angle-left pull-right"></i>
-                </span>
+                <i class="fa fa-user"></i> 
+                <span>Alunos</span>
+                <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
                 <li><a href="javascript:showPage('','Alunos Pré-matriculados','Home,Alunos,Pré-matriculados');"><i class="fa fa-circle-o"></i> Pré-matriculados</a></li>
@@ -101,9 +100,7 @@
               <a href="#">
                 <i class="fa fa-money"></i>
                 <span>Financeiro</span>
-                <span class="pull-right-container">
-                  <i class="fa fa-angle-left pull-right"></i>
-                </span>
+                <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
                 <li><a href="javascript:showPage('','Efetuar Pagamento','Home,Pagamento,Efetuar Pagamento');"><i class="fa fa-circle-o"></i> Efetuar Pagamento</a></li>
@@ -114,9 +111,7 @@
               <a href="#">
                 <i class="fa fa-edit"></i>
                 <span>Controle</span>
-                <span class="pull-right-container">
-                  <i class="fa fa-angle-left pull-right"></i>
-                </span>
+                <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
                 <li><a href="javascript:showPage('','Entradas','Home,Controle,Entradas');"><i class="fa fa-circle-o"></i> Entradas</a></li>

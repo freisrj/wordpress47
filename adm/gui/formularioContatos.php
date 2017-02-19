@@ -195,9 +195,9 @@ $mensagem = '';
                         <thead>
                             <tr role="row">
                                 <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Id: activate to sort column ascending" style="width: 50px;">Id</th>
-                                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Contato: activate to sort column ascending" style="width: 260px;">Contato</th>
+                                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Data: activate to sort column ascending" style="width: 120px;">Data</th>
+                                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Nome: activate to sort column ascending" style="width: 260px;">Nome</th>
                                 <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="E-mail: activate to sort column ascending" style="width: 150px;">E-mail</th>
-                                <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Data Msg: activate to sort column ascending" style="width: 120px;">Data Msg</th>
                                 <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Mensagem: activate to sort column ascending" style="width: 120px;">Mensagem</th>
                                 <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Data Resp: activate to sort column ascending" style="width: 120px;">Data Resp</th>
                                 <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Resposta: activate to sort column ascending" style="width: 150px;">Resposta</th>
@@ -243,9 +243,9 @@ $mensagem = '';
                                         } 
                                         echo "<tr role='row' class='odd'>";
                                         echo "<td>" . $id . "</td>";
-                                        echo "<td class='sorting_1'>" . $nome . "</td>";
+                                        echo "<td class='sorting_1'>" . $data . "</td>";
+                                        echo "<td class='sorting_2'>" . $nome . "</td>";
                                         echo "<td>" . $email . "</td>";
-                                        echo "<td>" . $data . "</td>";
                                         echo "<td>" . $mensagem . "</td>";
                                         echo "<td>" . $dataResposta . "</td>";
                                         echo "<td>" . $resposta . "</td>";
